@@ -14,7 +14,7 @@ public class FavoritesPage extends BasePage {
 
     private static final Logger logger = Logger.getLogger(FavoritesPage.class);
 
-    @FindBy(xpath = "//div[@class='_2rw4E _2O5qi']")
+    @FindBy(xpath = "//div[@data-auto-themename='quick']")
     private List<WebElement> favoriteProduct;
 
     @FindBy(xpath = "//button[@title='Удалить из избранного']")

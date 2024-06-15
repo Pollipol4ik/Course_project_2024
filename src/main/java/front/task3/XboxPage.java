@@ -19,7 +19,7 @@ public class XboxPage extends BasePage {
     @FindBy(xpath = "//button[@title='Добавить в избранное']")
     private WebElement addToFavoritesButton;
 
-    @FindBy(xpath = "//div[@id='/content/header/header/wishlistButton']")
+    @FindBy(xpath = "//div[@data-baobab-name='favorites']")
     private WebElement favoritesButton;
 
     @FindBy(xpath = "//div[@data-auto='notification']")
