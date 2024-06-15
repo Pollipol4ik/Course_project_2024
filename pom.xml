@@ -150,8 +150,6 @@
                     </dependency>
                 </dependencies>
             </plugin>
-
-            <!-- Плагин, который отвечает за формирование сайта Allure отчета -->
             <plugin>
                 <groupId>io.qameta.allure</groupId>
                 <artifactId>allure-maven</artifactId>

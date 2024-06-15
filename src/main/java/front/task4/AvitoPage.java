@@ -19,10 +19,10 @@ public class AvitoPage extends BasePage {
     @FindBy(xpath = "//input[@data-marker='search-form/suggest']")
     private WebElement searchInput;
 
-    @FindBy(xpath = "//div[@class='new-rubricator-content-leftcontent-_hhyV']/div/div")
+    @FindBy(xpath = "//div[@data-marker='top-rubricator/root-category-26195']/div")
     private List<WebElement> categoryList;
 
-    @FindBy(xpath = "//div[@class = 'new-rubricator-content-child__item-_bubk']/a")
+    @FindBy(xpath = "//div[@data-marker = 'top-rubricator/category-wrapper-26249']/a")
     private List<WebElement> menuItemList;
 
     private String searchQuery;
