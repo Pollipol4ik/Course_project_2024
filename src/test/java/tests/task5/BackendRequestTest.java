@@ -110,11 +110,11 @@ public class BackendRequestTest {
     }
 
     @Test
-    @DisplayName("Проверка эндпоинта /api/unknown/25")
+    @DisplayName("Проверка эндпоинта /api/unknown/23")
     public void getResourceNotFound() {
         given()
                 .when()
-                .get("https://reqres.in/api/unknown/25")
+                .get("https://reqres.in/api/unknown/23")
                 .then()
                 .statusCode(404)
                 .body(equalTo("{}"));
