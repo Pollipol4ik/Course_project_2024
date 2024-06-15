@@ -30,7 +30,7 @@ public class YandexMarketTest {
 
 
     @Test
-    @DisplayName("Яндекс Маркет: проверка сортировки товаров по цене")
+    @DisplayName("Яндекс Маркет: проверка добавления товара в избранное")
     public void test() throws InterruptedException {
         YandexMarketPage yandexMarketPage = new YandexMarketPage();
         yandexMarketPage.checkOpenPage()
