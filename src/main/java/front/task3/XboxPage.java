@@ -16,7 +16,7 @@ public class XboxPage extends BasePage {
     @FindBy(xpath = "//div[@data-auto-themename='listDetailed']")
     private List<WebElement> productList;
 
-    @FindBy(xpath = "//div[@class='_27kXM']")
+    @FindBy(xpath = "//button[@title='Добавить в избранное']")
     private WebElement addToFavoritesButton;
 
     @FindBy(xpath = "//div[@id='/content/header/header/wishlistButton']")

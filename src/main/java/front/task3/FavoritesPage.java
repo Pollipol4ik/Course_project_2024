@@ -17,13 +17,13 @@ public class FavoritesPage extends BasePage {
     @FindBy(xpath = "//div[@class='_2rw4E _2O5qi']")
     private List<WebElement> favoriteProduct;
 
-    @FindBy(xpath = "//button[@class='_2VECW']")
+    @FindBy(xpath = "//button[@title='Удалить из избранного']")
     private WebElement removeFromFavoritesButton;
 
     @FindBy(xpath = "//div[@data-auto='notification']")
     private WebElement successNotification;
 
-    @FindBy(xpath = "//div[@class='_33Da1']/span")
+    @FindBy(xpath = "//div[@data-auto='emptyState']//span")
     private WebElement loginMessage;
 
     private String firstProductTitle;

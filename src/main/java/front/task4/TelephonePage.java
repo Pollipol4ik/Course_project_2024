@@ -16,7 +16,7 @@ public class TelephonePage extends BasePage {
     @FindBy(xpath = "//div[@data-marker='item']")
     private List<WebElement> productList;
 
-    @FindBy(xpath = "//div[contains(@class, 'sort-sort-klm3E')]")
+    @FindBy(xpath = "//span[@data-marker='sort/title']")
     private WebElement sortDropdown;
 
     @FindBy(xpath = "//button[@data-marker='sort/custom-option(1)']")

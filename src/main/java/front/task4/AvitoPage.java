@@ -13,7 +13,7 @@ import java.util.List;
 public class AvitoPage extends BasePage {
     private static final Logger logger = Logger.getLogger(AvitoPage.class);
 
-    @FindBy(xpath = "//button[@class='desktop-lqkwz0']")
+    @FindBy(xpath = "//button[@data-marker='top-rubricator/all-categories']")
     private WebElement catalogButton;
 
     @FindBy(xpath = "//input[@data-marker='search-form/suggest']")

@@ -4,10 +4,10 @@ import front.managers.DriverManager;
 import front.managers.ManagerInitiallization;
 import front.task2.PolytechPage;
 import io.qameta.allure.junit4.DisplayName;
+import org.junit.AfterClass;
 import org.junit.Before;
 import org.junit.BeforeClass;
 import org.junit.Test;
-import org.testng.annotations.AfterClass;
 
 public class SheduleTest {
     private final DriverManager driverManager = DriverManager.getInstance();
