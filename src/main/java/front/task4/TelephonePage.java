@@ -1,6 +1,5 @@
 package front.task4;
 
-import front.task3.XboxPage;
 import io.qameta.allure.Step;
 import org.apache.log4j.Logger;
 import org.junit.Assert;
@@ -34,6 +33,7 @@ public class TelephonePage extends BasePage {
 
     private String firstProductName;
     private String firstProductPrice;
+
     @Step("Вывести в лог первые 5 найденных товаров (название и цену)")
     public TelephonePage logFirstFiveProducts() {
 
@@ -87,6 +87,7 @@ public class TelephonePage extends BasePage {
 
         return Double.parseDouble(priceDigits);
     }
+
     @Step("Добавить первый товар в избранное")
     public TelephonePage addFirstProductToFavorites() {
         WebElement firstProduct = productList.get(0);
@@ -95,6 +96,7 @@ public class TelephonePage extends BasePage {
         logger.info("Добавлен первый товар в избранное.");
         return this;
     }
+
     @Step("Запомнить первый товар из списка (название и цену)")
     public TelephonePage rememberFirstProduct() {
         WebElement firstProduct = productList.get(0);

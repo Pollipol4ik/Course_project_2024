@@ -57,6 +57,7 @@ public class YandexMarketPage extends BasePage {
         Assert.fail("Нет категории '" + category + "'");
         return this;
     }
+
     @Step("Навести на подкатегорию '{subcategory}' и выбрать пункт меню '{menuItem}'")
     public XboxPage moveToSubcategoryAndClickMenuItem(String subcategory, String menuItem) {
         for (WebElement element : subcategoryList) {

@@ -85,22 +85,6 @@ public class BasePage {
                 .extract().statusCode();
     }
 
-    protected String delete(String request) {
-        return given()
-                .when()
-                .delete(request)
-                .then()
-                .extract().response().asPrettyString();
-    }
-
-    protected int deleteStatusCode(String request) {
-        return given()
-                .when()
-                .delete(request)
-                .then()
-                .extract().statusCode();
-    }
-
     protected String put(String request, String requestBody) {
         return given()
                 .contentType(ContentType.JSON)
@@ -140,6 +124,23 @@ public class BasePage {
                 .then()
                 .extract().statusCode();
     }
+
+    protected String delete(String request) {
+        return given()
+                .when()
+                .delete(request)
+                .then()
+                .extract().response().asPrettyString();
+    }
+
+    protected int deleteStatusCode(String request) {
+        return given()
+                .when()
+                .delete(request)
+                .then()
+                .extract().statusCode();
+    }
+
 
     protected void compareResponses(String expectedResponse, String actualResponse) {
         ObjectMapper mapper = new ObjectMapper();

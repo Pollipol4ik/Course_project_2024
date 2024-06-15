@@ -26,6 +26,7 @@ public class AvitoPage extends BasePage {
     private List<WebElement> menuItemList;
 
     private String searchQuery;
+
     @Step("Проверка открытия главной страницы")
     public AvitoPage checkOpenPage() {
         logger.info("Проверка открытия страницы");
