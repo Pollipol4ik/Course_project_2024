@@ -28,7 +28,8 @@ public class CatalogTest {
     }
 
     @Test
-    @DisplayName("Проверка открытия и навигации по категории товаров")
+    @DisplayName("Проверка открытия и навигации по категории товаров " +
+            "и корректность работы при выборе сортировки")
     public void test() throws InterruptedException {
         AvitoPage avitoPage = new AvitoPage();
         avitoPage.checkOpenPage()

@@ -28,7 +28,7 @@ public class FavoriteTest {
     }
 
     @Test
-    @DisplayName("Проверка открытия и навигации по категории товаров")
+    @DisplayName("Проверка корректного добавления товаров в избранное ")
     public void test() throws InterruptedException {
         AvitoPage avitoPage = new AvitoPage();
         avitoPage.checkOpenPage()

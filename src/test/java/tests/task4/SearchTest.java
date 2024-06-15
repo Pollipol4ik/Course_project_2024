@@ -29,7 +29,7 @@ public class SearchTest {
     }
 
     @Test
-    @DisplayName("Проверка открытия и навигации по категории товаров")
+    @DisplayName("Проверка корректной работы поиска и фильтрации")
     public void test() throws InterruptedException {
         AvitoPage avitoPage = new AvitoPage();
         avitoPage.enterSearchTextAndSelectFirstResult("iphone 11")
